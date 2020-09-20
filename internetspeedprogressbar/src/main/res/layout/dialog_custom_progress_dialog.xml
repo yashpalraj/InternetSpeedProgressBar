@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="#00FFFFFF"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/reg_dimen_10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dialog_img_progressbar"
+                android:layout_width="@dimen/reg_dimen_100dp"
+                android:layout_height="@dimen/reg_dimen_60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_sync_gif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dialog_progressbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/reg_dimen_5dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:text="@string/please_wait"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dialog_img_progressbar" />
+
+            <TextView
+                android:id="@+id/dialog_progressbar_download_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/reg_dimen_5dp"
+                android:layout_marginEnd="@dimen/reg_dimen_5dp"
+                android:layout_marginBottom="@dimen/reg_dimen_5dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:minWidth="@dimen/reg_dimen_150dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dialog_progressbar_title"
+                tools:text="Download Speed" />
+
+            <TextView
+                android:id="@+id/dialog_progressbar_upload_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/reg_dimen_5dp"
+                android:layout_marginEnd="@dimen/reg_dimen_5dp"
+                android:layout_marginBottom="@dimen/reg_dimen_5dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:minWidth="@dimen/reg_dimen_150dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/text_dimen_14sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dialog_progressbar_download_speed"
+                tools:text="Upload Speed" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

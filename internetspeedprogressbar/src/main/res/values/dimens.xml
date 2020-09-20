@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="reg_dimen_5dp">5dp</dimen>
+    <dimen name="reg_dimen_10dp">10dp</dimen>
+    <dimen name="reg_dimen_60dp">60dp</dimen>
+    <dimen name="reg_dimen_100dp">100dp</dimen>
+    <dimen name="reg_dimen_150dp">150dp</dimen>
+
+    <dimen name="text_dimen_14sp">14sp</dimen>
+</resources>
